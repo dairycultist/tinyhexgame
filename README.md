@@ -8,3 +8,5 @@ Tiny, deceptively hard game made in Godot.
 - Soft-scifi aesthetic. Must protect oceanic drill from incoming enemies. Lose condition is when either you or the drill are destroyed. This, alongside the constant need to search for crates, prevents camping.
 
 https://www.youtube.com/watch?v=4bcFGSBROmo
+
+11:53 has a snowy vibe. maybe instead of set in the ocean, it's set in a tundra? dark grey sky, soft snow, muffled sounds, shoot or die
