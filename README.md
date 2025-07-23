@@ -12,3 +12,5 @@ https://www.youtube.com/watch?v=4bcFGSBROmo
 11:53 has a snowy vibe. maybe instead of set in the ocean, it's set in a tundra? dark grey sky, soft snow, muffled sounds, shoot or die
 
 [sky](https://github.com/rpgwhitelock/AllSkyFree_Godot)
+
+[mountains in sky](https://www.blenderkit.com/asset-gallery-detail/550191ed-cfe4-450e-9a20-7a4f8b00afcb/)
