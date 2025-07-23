@@ -1,11 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://diisd05yneqyx"]
+[gd_scene load_steps=8 format=3 uid="uid://diisd05yneqyx"]
 
 [ext_resource type="PackedScene" uid="uid://boqhaag373a75" path="res://props/pillar/pillar.tscn" id="1_fj7yv"]
 [ext_resource type="Script" uid="uid://drsnwq0m4oypk" path="res://player_controller.gd" id="2_fj7yv"]
+[ext_resource type="Texture2D" uid="uid://c6imjn5oeahv3" path="res://sky.png" id="3_tlwt5"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tlwt5"]
 
-[node name="Node3D" type="Node3D"]
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_aqk2v"]
+panorama = ExtResource("3_tlwt5")
+
+[sub_resource type="Sky" id="Sky_036b0"]
+sky_material = SubResource("PanoramaSkyMaterial_aqk2v")
+
+[sub_resource type="Environment" id="Environment_dwbse"]
+background_mode = 2
+sky = SubResource("Sky_036b0")
+
+[node name="World" type="Node3D"]
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.597709, 0.611559, -0.518401, 0.774746, -0.606904, 0.177305, -0.206187, -0.507606, -0.836554, 0, 10, 0)
@@ -28,3 +39,6 @@ fov = 90.0
 [node name="Collider" type="CollisionShape3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_tlwt5")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dwbse")

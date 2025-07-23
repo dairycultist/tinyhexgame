@@ -13,7 +13,6 @@ config_version=5
 config/name="tinyhexgame"
 run/main_scene="uid://diisd05yneqyx"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
 
 [input]
 
